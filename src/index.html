@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script type="text/javascript" src="oblig2-data1700.js"></script>
+  <style>
+    #Antall{
+      width: 15px;
+      margin-left: 35px;
+    }
+    #Filmer{
+      width: 200px;
+    }
+
+    label{
+      display: inline-block;
+      width: 75px;
+      text-align: left;
+
+    }
+
+    #slett{
+      margin-top: 15px;
+    }
+
+    .error{
+      color: rgb(210, 40, 11);
+    }
+    body{
+      padding: 2px;
+      padding-bottom: 50px;
+      border: 2px solid rgb(red);
+      width: 700px;
+    }
+
+    p{
+      display: 10px;
+      flex-direction: row;
+    }
+    th, td{
+      padding: 10px;
+      margin-right: 10px;
+    }
+    .flex{
+      display: run-in;
+    }
+
+  </style>
+</head>
+<h1>Bestilling av Kinobilletter</h1>
+
+<p>Velg Film:
+  <select id="Filmer" name="Velg">
+    <option> Velg film her</option>
+    <option> Spider Man </option>
+    <option> Iron Man </option>
+    <option> Wonder woman </option>
+    <option> Ant-Man and the Wasp: Quantumania </option>
+    <option> Avatar: The Way of Water </option>
+    <option> Magic Mike's Last Dance </option>
+    <option> The Incredible Hulk </option>
+  </select>
+</p>
+<div class="flex">
+<span>Antall
+<input id="Antall" type="text"></input> <span class="error" id="feilAntall">
+</span>
+    <br><br>
+<div class="Personlig info">
+
+<!---Lagt til kategorier innenfor personlig info-->
+
+<label>Fornavn</label>
+<input id="Fornavn" type="text">
+<span class="error" id="feilFornavn" ></span>
+    <br><br>
+
+<label>Etternavn</label>
+<input id="Etternavn" type="text">
+<span class="error" id="feilEtternavn" ></span>
+    <br><br>
+
+<label>Telefonnr</label>
+<input id="Telefonnr" type="text">
+<span class="error" id="feilTelefonnr" ></span>
+    <br><br>
+
+<label>E-Post</label>
+<input id="E-Post" type="text">
+<span class="error" id="feilE-Post" ></span>
+
+</div>
+    <br>
+
+  <!--- Nederst på siden lagt til trykke knapp-->
+
+<button onclick="registerBillet()">Kjøp Billet</button>
+<h1> Alle Billeter </h1>
+<div id="alleBilleter"> </div>
+<button id="slett" onclick="slettBilletter();">Slett alle billetter
+</button>
+</span>
+</div>
