@@ -34,7 +34,7 @@ function registerBillet() {
     }
     if(telefonnr == null || antall == "" ) {
         riktigiginput = (false);
-        document.getElementById("feilTelefonnr").innerHTML = "Må skrive noe inn i telefonnr.";
+        document.getElementById("feilTelefonnr").innerHTML = "Må skrive noe inn i telefon nr.";
         document.getElementById("Fornavn").value="";
     }
 

@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-
+<html lang="en">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="oblig2-data1700.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Fiona's Kino</title>
   <script type="text/javascript" src="oblig2-data1700.js"></script>
   <style>
     #Antall{
-      width: 15px;
+      width: 40px;
       margin-left: 35px;
     }
     #Filmer{
@@ -48,9 +51,21 @@
       display: run-in;
     }
 
+    img{
+      display: block;
+      max-width: 25%;
+      height: auto;
+      margin-bottom: -37px;
+       }
+
+
   </style>
 </head>
+<body class="bg-light">
+<img src="img\cinema logo.jpg"></img>
 <h1>Bestilling av Kinobilletter</h1>
+    <br>
+
 
 <p>Velg Film:
   <select id="Filmer" name="Velg">
@@ -64,12 +79,14 @@
     <option> The Incredible Hulk </option>
   </select>
 </p>
+
 <div class="flex">
 <span>Antall
-<input id="Antall" type="text"></input> <span class="error" id="feilAntall">
-</span>
+<input id="Antall" type="number"></input>
+    <span class="error" id="feilAntall"> </span>
     <br><br>
 <div class="Personlig info">
+
 
 <!---Lagt til kategorier innenfor personlig info-->
 
@@ -83,7 +100,7 @@
 <span class="error" id="feilEtternavn" ></span>
     <br><br>
 
-<label>Telefonnr</label>
+<label>Telefon nr</label>
 <input id="Telefonnr" type="text">
 <span class="error" id="feilTelefonnr" ></span>
     <br><br>
@@ -97,10 +114,13 @@
 
   <!--- Nederst på siden lagt til trykke knapp-->
 
-<button onclick="registerBillet()">Kjøp Billet</button>
-<h1> Alle Billeter </h1>
+
+<button style="margin-top: 10px;margin-bottom:10px;" class="btn btn-success" onclick="registerBillet()">Kjøp Billett</button>
+<h1> Antall billetter </h1>
 <div id="alleBilleter"> </div>
-<button id="slett" onclick="slettBilletter();">Slett alle billetter
+<button style="margin-top: 15px;margin-bottom:20px;" class="btn btn-danger" id="slett" onclick="slettBilletter();">Slett alle billetter
 </button>
 </span>
 </div>
+</body>
+</html>
