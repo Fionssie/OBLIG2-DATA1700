@@ -4,7 +4,7 @@ OsloMet brukernavn: s355587
 
 GitHub brukernavn: fionssie
 
-Github repo URL: 
+Github repo URL: https://github.com/Fionssie/OBLIG2-DATA1700
 
 Fullt navn: Fiona Qerimi
 
