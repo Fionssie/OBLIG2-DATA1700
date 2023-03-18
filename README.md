@@ -4,7 +4,7 @@ OsloMet brukernavn: s355587
 
 GitHub brukernavn: fionssie
 
-Github repo URL: https://github.com/Fionssie/Bestiling-av-kinobilleter
+Github repo URL: 
 
 Fullt navn: Fiona Qerimi
 
